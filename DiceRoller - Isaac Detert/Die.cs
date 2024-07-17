@@ -29,9 +29,14 @@ namespace DiceRoller___Isaac_Detert
 		public byte Roll()
 		{
 			// Generate random number
+			Random random = new Random();
+			byte newValue = (byte)random.Next(1, 7);
+
 			// Set to face value
+			FaceValue = newValue;
+
 			// Return new number
-			throw new NotImplementedException();
+			return FaceValue;
 		}
     }
 }
